@@ -1,0 +1,464 @@
+main{
+    padding: 110px 5px 100px 10px;
+    width: 75%;
+    float: right;
+    position: relative;
+    min-height: calc(100vh - 0px);
+}
+
+.fine-dashboard{
+    background-color: black;
+    background-image: url(../../img/cloud.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 0 1000px rgb(4, 4, 39, 0.8) inset;
+}
+
+.main_top{
+    width: max-content;
+    background: #faf5f5;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.main_top i{
+    margin: 0px 5px;
+}
+
+.main-middle{
+    margin: 20px 0px;
+}
+
+.main-middle .container{
+    display: grid;
+    grid-gap: 4%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.main-middle .container .box{
+    background: #0d3977;
+    border-radius: 5px;
+    padding: 15px;
+    max-width: 250px;
+    /*box-shadow: 1px 1px 20px 1px #e8e8e8;*/
+    box-shadow: 1px 1px 20px 1px rgb(232, 232, 232, 0.3);
+    color: white;
+    font-size: .9em;
+}
+
+.main-middle .container .box.one{
+    grid-column: 1;
+    grid-row: 1; 
+}
+
+.main-middle .container .box.two{
+    grid-column: 2;
+    grid-row: 1; 
+}
+
+.main-middle .container .box.three{
+    grid-column: 3;
+    grid-row: 1; 
+}
+
+.main-middle .container box.four{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.main-middle .container .box.five{
+    grid-column: 2;
+    grid-row: 2; 
+}
+
+.main-middle .container box.six{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.main-middle .container .box img{
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.main-middle .container .box span{
+    color: rgb(250, 250, 250, 0.5);
+    font-size: .9em;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex .right{
+    flex: 3;
+}
+
+.flex .left{
+    flex: 7;
+}
+
+.deposit{
+    margin: 20px 0px 20px 0px;
+}
+
+.deposit .container{
+    display: flex;
+}
+
+.deposit .container h3{
+    margin-left: 10px
+}
+
+.deposit .container .left, .deposit{
+    flex: 1;
+    width: 90%;
+    max-width: 420px;
+}
+
+.deposit .container .right{
+    flex: 1;
+}
+
+.deposit .container .left form{
+    max-width: 300px;
+}
+
+
+.deposit.news .container .left form{
+    width: 100%;
+    max-width: 700px;
+}
+
+.deposit .container .left form input,
+.deposit .container .left form select{
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+input, select:focus{
+    outline: none;
+}
+
+.deposit .container .left form button{
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid #205AAC;
+    background: #205AAC;
+    color: white;
+    margin: auto;
+    display: block;
+    width: max-content;
+}
+
+.deposit .container .left form p{
+    padding: 0px 10px;
+    font-size: .8em;
+    margin: 0px;
+}
+
+.deposit .container .left form button:hover{
+    background: white;
+    color: #205AAC;
+    transition: 500ms;
+}
+
+.deposit .container .left form p a{
+    border: 1px solid #205aac;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #205aac;
+    color: white;
+}
+
+.deposit .container .left form p input{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.max-wrap{
+    position: relative;
+}
+
+.max-btn{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 8888;
+    color: #205AAC;
+    cursor: pointer;
+}
+
+
+
+
+.transaction{
+    border: 1px solid #d9d9d9;
+    padding: 13px;
+    margin-top: 10px;
+}
+
+.transaction .content{
+    padding: 15px 10px;
+    box-shadow: 0px 0px 20px 1px #dbdbdb;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.transaction .container{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+}
+
+.transaction .container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.profile{
+    text-transform: capitalize;
+}
+
+.profile .container{
+    display: flex;
+    margin: 10px 0px;
+}
+
+.profile .container .left{
+    flex: 3;
+    padding: 20px;
+    box-shadow: 0px 0px 40px 1px #c6c6c6;
+    border-radius: 5px;
+    margin: 10px;
+    border-top: 3px solid #205AAC;
+}
+
+.profile .container .left img{
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: auto;
+    display: block;
+}
+
+.profile .container .left h2{
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.profile .container .left p{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 10px 0px;
+    margin: 0px;
+    font-size: .9em;
+}
+
+.profile .container .left p a{
+    float: right;
+}
+
+.profile .container .left p:first-of-type a{
+    background: #205AAC;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 3px;
+    font-size: .8em;
+}
+
+.profile .container .left input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #205AAC;
+    margin: 10px 0px;
+    border-radius: 3px;
+}
+
+.profile .container .left button{
+    padding: 10px 20px;
+    background: #205AAC;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+}
+
+.profile .container .right{
+    flex: 7;
+    font-size: .8em;
+}
+
+.profile .container .right .head{
+    box-shadow: 0px 0px 40px 1px #c6c6c6;
+    border-radius: 5px;
+    margin: 10px 10px 20px 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.profile .container .right .head a{
+    padding: 10px 20px;
+    background: #205AAC;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 0px 10px 1px #9ecbff;
+    margin: 0px 10px 0px 0px;
+}
+
+.profile .container .right .content{
+    box-shadow: 0px 0px 40px 1px #c6c6c6;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.profile .container .right .content p{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+.profile .container .right .content p:first-of-type{
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+
+.profile .container .right p:last-of-type{
+    text-transform: none;
+}
+
+.profile .container .right .content p span{
+    margin: 0px 0px 0px 10px;
+    float: right;
+    color: rgb(0, 0, 0, 0.7)
+}
+
+.profile .container .right .content p input{
+    padding: 5px;
+    border: 1px solid #205aac;
+}
+
+.profile .container .right .content p button{
+    padding: 5px;
+    border: 1px solid #205aac;
+    color: white;
+    border-radius: 3px;
+    background-color: #205aac;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 850px){
+    
+    .profile .container{
+        flex-direction: column;
+    }
+    
+    .profile .container .left,
+    .profile .container .right .head,
+    .profile .container .right .content{
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    main{
+        width: 100%;
+    }
+    
+
+    .flex{
+        flex-direction: column;
+        width: 100%
+    }
+    
+    .flex .left{
+        flex: 1;
+        overflow-x: scroll;
+        margin-top: 20px;
+    }
+    
+    .flex .right{
+        flex: 1;
+        margin: 20px auto;
+    }
+    
+    .deposit .container{
+        flex-direction: column;
+    }
+    
+    .deposit .container .left, 
+    .deposit .container .right{
+        margin: auto;
+        
+    }
+
+    .deposit .right.invest{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    
+    .main-middle .container{
+        grid-gap: 2%;
+        grid-template-columns: 48% 48%;
+    }
+
+    .main-middle .container .box{
+        padding: 15px;
+        max-width: 300px;
+    }
+
+    .main-middle .container .box.one{
+        grid-column: 1;
+        grid-row: 1; 
+    }
+
+    .main-middle .container .box.two{
+        grid-column: 2;
+        grid-row: 1; 
+    }
+
+    .main-middle .container .box.three{
+        grid-column: 1;
+        grid-row: 2; 
+    }
+
+    .main-middle .container box.four{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .main-middle .container .box.five{
+        grid-column: 1;
+        grid-row: 3; 
+    }
+
+    .main-middle .container box.six{
+        grid-column: 2;
+        grid-row: 3;
+    }
+}
+
+@media only screen and (max-width: 348px){
+    .profile .container .right .head a{
+        display: block;
+        margin: 10px auto;
+    }
+}

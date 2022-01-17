@@ -1,0 +1,286 @@
+h1{
+    color: #00539f;
+    margin: 20px auto;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+p{
+    font-size: .9em;
+    line-height: 1.6;
+}
+
+.terms{
+    padding: 10px;
+}
+
+.terms p, .sustain p{
+    color: rgb(0, 0, 0, 0.8);
+}
+
+.terms h1{
+    max-width: 1000px;
+    border-top: 1px solid #ccc;
+}
+
+.terms .container{
+    background: #f0f0f0;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.terms .container .box{
+    background: white;
+    padding: 15px;
+}
+
+.terms .container .box ul{
+    padding: 10px 10px 10px 30px;
+}
+
+.terms .container .box ul li{
+    line-height: 1.6;
+    font-size: .9em;
+}
+
+.sustain h1{
+    max-width: 1200px;
+}
+
+.sustain .container{
+    display: flex;
+}
+
+.sustain .container .left{
+    flex: 1;
+    background-image: url(../img/sustain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.sustain .container .right{
+    flex: 1;
+    padding: 30px;
+    background: #00539f;
+}
+
+.sustain .container .right * {
+    color: white;
+}
+
+.sustain .container .right h1{
+    font-size: 2.5em
+}
+
+.sustain .container .right p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sustain.plan .left{
+    background-image: url(../img/plan.jpg);
+}
+
+.sustain.about .left{
+    background-image: url(../img/about.jpg);
+}
+
+.sustain.about .right h1{
+    margin: 0px
+}
+
+
+
+
+#faqs li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 0px 0px 10px 0px;
+}
+
+#faqs li a{
+    display: block;
+    margin: 10px 0px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+#faqs li span{
+    display: none;
+    font-size: .9em;
+}
+
+
+
+
+.contact h1{
+    margin: 20px 0px;
+    text-align: center;
+    color: #003b65;
+}
+
+.contact .container{
+    display: flex;
+    width: 95vw;
+    max-width: 1250px;
+    margin: 40px auto;
+}
+
+.contact .container .left{
+    flex: 1;
+}
+
+.contact .container .left .text-input,
+.contact .container .left textarea{
+    display: block;
+    width: 80%;
+    margin:  10px auto;
+    padding: 15px 20px;
+    border-radius: 3px;
+    border: 1px solid #003b65;
+    color: #003b65;
+}
+
+.contact .container .left button{
+    display: block;
+    width: max-content;
+    margin:  10px auto;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #003b65;
+    color: #003b65;
+}
+
+.contact .container .left button:hover{
+    background-color: #003b65;
+    color: white;
+}
+
+.contact .container .right{
+    flex: 1;
+}
+
+.contact .container .right p{
+    padding: 20px 20px;
+}
+
+.contact .container .right a{
+    width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s;
+    color: white;
+}
+
+#message-reponse{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+#facebook{
+    background: #3B5998;
+     transition: 500ms;
+}
+
+#twitter{
+    background: #55ACEE;
+    transition: 500ms;
+}
+
+#linkedin{
+    background: #0077B5;
+    transition: 500ms;
+}
+
+#whatsapp{
+    background: #25D366;
+    transition: 500ms;
+}
+
+#instagram{
+    background: #5851db;
+    transition: 500ms;
+}
+
+#google-plus{
+    background: red;
+    transition: 500ms;
+}
+
+
+@media only screen and (max-width: 800px){
+    h1{
+        font-size: 1.7em;
+    }
+    
+    .terms .container{
+        padding: 10px;
+    }
+    
+    .terms .container .box h3{
+        font-size: 1.2em;
+    }
+    
+    .sustain .container{
+        flex-direction: column;
+    }
+
+    .sustain .container .left{
+        min-height: 300px;
+    }
+    
+    .sustain .container .right h1{
+        font-size: 2em
+    }
+
+    .sustain .container .right p{
+        font-size: 1.0em;
+        font-weight: bold;
+    }
+
+    .contact .container{
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+
+    h1{
+        font-size: 1.5em
+    }
+    .terms{
+        padding: 0px;
+    }
+
+    .sustain h1 {
+        font-size: 1.1em;
+    }
+
+    .sustain .container {
+        padding: 0px;
+    }
+
+    .sustain .container .right {
+        padding: 20px;
+    }
+
+    .terms .container .box ul{
+        padding: 10px 10px 10px 20px;
+    }
+}
+
+

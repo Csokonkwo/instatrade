@@ -1,0 +1,88 @@
+.alert{
+    height: inherit;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.alert-danger{
+    background-color: darkred;
+}
+
+.form-section{
+    width: 100%;
+    font-family: sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.form-section * {
+    color: white;
+}
+
+.form-section li {
+    list-style: none;
+    margin-top: 5px;
+}
+
+*:focus{
+    outline: none;
+}
+
+.center{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container{
+    width: 500px;
+    border: 1px solid #040129;
+    border-radius: 10px;
+    padding: 0px 40px 50px 40px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+}
+
+.form-container .text-input{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+    box-sizing: border-box;
+    color: #040129;
+}
+
+.form-container label{
+    display: block;
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 15px
+}
+
+.btn{
+    font-size: 1.08em;
+    font-family: 'lora', serif;
+}
+
+.msg{
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.success{
+    color: green;
+    border: 1px solid green;
+    background-color: lightgreen;
+}
+
+.error{
+    color: darkred;
+    border: 1px solid darkred;
+    background-color: red;
+}

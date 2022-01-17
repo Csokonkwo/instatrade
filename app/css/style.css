@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+
+html{
+    padding: 0px;
+    font-family: Source Sans Pro, sans-serif;
+    scroll-behavior: smooth;
+} 
+
+body{
+    padding: 0px;
+    margin: 0px auto;
+    font-family: Source Sans Pro, sans-serif;
+    color: black;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+    max-width: 1600px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.alert{
+    height: inherit;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    list-style: none;
+    font-size: .9em;
+    transition: 1000ms;
+}
+
+.alert-danger{
+    background-color: darkred;
+    color: white;
+}
+
+.alert-success{
+    background-color: green;
+    color: white; 
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header{
+    background-color: #06112a;
+    min-height: 100px;
+    padding: 10px 0px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 200;
+    box-shadow: 0px 1px 10px 1px rgb(162, 162, 162, 0.2);
+}
+
+header .logo img{
+    width: 100px;
+    display: block;
+    float: left;
+    background-color: white;
+}
+
+header label{
+    float: left;
+    margin: 20px 20px 0px 30px;
+    text-transform: capitalize;
+}
+
+header .profile_pics img{
+    width: 90px;
+    height: 90px;
+    float: right;
+    margin-right: 20px;
+    border-radius: 50%;
+    border-bottom: 3px solid green;
+    border-top: 3px solid green;
+    border-right: 3px solid green;
+    padding: 3px;
+}
+
+header .profile_username{
+    text-align: center;
+    color: white;
+    width: max-content;
+    margin: auto;
+}
+
+header .profile_username span{
+    display: block;
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+header .profile_username span:first-of-type{
+    font-weight: bold;
+}
+header .profile_username span:last-of-type{
+    font-size: .9em;
+}
+
+.fa-bell{
+    display: none;
+}
+
+aside{
+    width: 25%;
+    position: fixed;
+    height: calc(100% - 100px);
+    top: 110px;
+    background: #06112a;
+}
+
+aside ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+aside ul li a{
+    display: block;
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid rgb(250, 250, 250, 0);
+    transition: 500ms;
+}
+
+aside ul li a:hover{
+    padding-left: 25px;
+}
+
+aside ul li i{
+    margin-right: 10px;
+}
+
+
+footer{
+    background: #06112a;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin: 20px -5px 0px -10px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 750px){
+    header{
+        min-height: 170px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    
+    header .logo img{
+        display: none;
+    }
+    
+    header .profile{
+        display: none;
+    }
+    
+    header .member_id{
+        font-size: .9em;
+    }
+    
+    header .menu-btn{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        font-size: 1.9em;
+        cursor: pointer;
+    }
+    
+    header .menu-btn span{
+        display: block;
+        width: 25px;
+        background-color: gray;
+        height: 3px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+
+    .btn_effect span:first-child{
+        width: 16px;
+    }
+
+    .btn_effect span:last-child{
+        width: 16px;
+        margin-left: 10px;
+    }
+    
+    header .profile_pics{
+        position: absolute;
+        top: 50px;
+        left: 35px
+    }
+
+    header .profile_pics img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    header .profile_username{
+        text-align: center;
+        color: white;
+        width: max-content;
+        margin: 70px 10px 10px 140px;
+    }
+    
+    .fa-bell{
+        display: block;
+    }
+    
+    aside{
+        top: 0px;
+        right: 0px;
+        width: 80%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        z-index: 400;
+        transition: 1000ms;
+        transform: scale(0, 1);
+        transform-origin: right;
+        box-shadow: 0 0 0 1000px rgb(4, 4, 39, 0.8) inset;
+    }
+    
+    aside ul li a{
+        padding: 14px 20px;
+        font-size: .9em;
+        
+        transition: opacity 150ms ease-in-out;
+        opacity: 0;
+    }
+    
+    .showing{
+        transform: scale(1, 1);
+        transition: 500ms;
+        z-index: 400;
+    }
+    
+    .showing a{
+        opacity: 1;
+        transition: opacity 100ms ease-in-out 300ms;
+    }
+
+    .fa-bell{
+        display: block;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    
+    footer{
+        font-size: .9em;
+    }
+}

@@ -1,0 +1,186 @@
+.gold-btn {
+  padding: 5px 6px 5px 6px;
+  color: rgb(33, 40, 51);
+  border-radius: 4px;
+  text-decoration: none;
+  background-image: linear-gradient(
+    rgb(248, 209, 47) 0%,
+    rgb(240, 185, 11) 100%
+  );
+
+  height: max-content;
+  font-size: 14px;
+}
+.transp-btn {
+  background-color: none;
+  padding: 5px 6px 5px 6px;
+  color: rgb(33, 40, 51);
+  border-radius: 4px;
+  text-decoration: none;
+  border: 0.5px solid rgb(0, 0, 0, 0.07);
+  background: white;
+  font-size: 14px;
+  height: max-content;
+  text-decoration: none;
+}
+.gold-btn:hover,
+.transp-btn:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.font12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font24 {
+  font-size: 24px;
+}
+.space-around-10 {
+  margin: 10px;
+}
+.space-around-20 {
+  margin: 20px;
+}
+.space-around-30 {
+  margin: 30px;
+}
+.space-within-10 {
+  padding: 10px;
+}
+.space-within-20 {
+  padding: 20px;
+}
+.space-within-30 {
+  padding: 30px;
+}
+.space-top-10 {
+  margin-top: 10px;
+}
+.space-left-10 {
+  margin-left: 10px;
+}
+.space-right-10 {
+  margin-right: 10px;
+}
+.space-bottom-10 {
+  margin-bottom: 10px;
+}
+.space-top-20 {
+  margin-top: 20px;
+}
+.space-left-20 {
+  margin-left: 20px;
+}
+.space-right-20 {
+  margin-right: 20px;
+}
+.space-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.center-absolute {
+  left: 45%;
+}
+.feint {
+  color: rgb(112, 122, 138);
+}
+.bold {
+  font-weight: bold;
+}
+.info-box {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.elevate {
+  box-shadow: 0px 0px 5px 5px rgb(0, 0, 0, 0.04);
+}
+.flex-horizontal {
+  display: flex;
+}
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+/*----Colors here------*/
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.black {
+  color: black;
+}
+.gold {
+  color: rgb(248, 209, 47);
+}
+
+/*------Background colors here----*/
+.black-back {
+  background-color: black;
+}
+.white-back {
+  background-color: white;
+}
+.gold-back {
+  background-color: rgb(248, 209, 47);
+}
+
+/*-----Sizing classes here------*/
+.full-width {
+  width: 100%;
+}
+.half-width {
+  width: 50%;
+}
+
+/*---Border classes here---*/
+.no-border {
+  border: none;
+}
+.hide-mobile {
+  display: none;
+}
+
+/*-----Responsive classes here------*/
+
+@media screen and (max-width: 500px) {
+  .flex-vertical-mobile-small {
+    flex-direction: column;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flex-vertical-mobile-medium {
+    flex-direction: column;
+  }
+  .hide-mobile {
+    display: block;
+  }
+  .hide-desktop {
+    display: none;
+  }
+}

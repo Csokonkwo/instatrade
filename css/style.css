@@ -1,0 +1,280 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  line-height: 1.5;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: inherit;
+}
+
+button, select, input, input:focus, input:hover, input:active {
+    outline: none;
+    box-shadow:none;  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+a:hover { text-decoration: none; }
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.search-cancel{
+    position: absolute;
+    top: 15px;
+    z-index: 8882;
+    right: 30px;
+    color: #003b65;
+    cursor: pointer;
+    transform: scale(1, 0);
+}
+
+.search-btn{
+    cursor: pointer;
+}
+
+.search-form{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 8880;
+    transform: scale(1, 0);
+    transform-origin: top;
+    background-color: white;
+    min-height: 70px;
+}
+
+.show-search{
+    transform: scale(1, 1);
+}
+
+.search-form input{
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 0px ;
+    color: #003b65;
+    background-color: white;
+}
+
+.search-form input:focus{
+    outline: none;
+}
+
+header{
+    padding: 10px 20px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+header .blog{
+    border: 1px solid black;
+    padding: 5px 30px;
+    margin-top: 5px;
+    margin-left: 40px
+}
+
+header label{
+    position: absolute;
+    top: 25px;
+    right: 133px;
+    z-index: 400;
+    color: black;
+}
+
+header .logo{
+    float: left;
+}
+
+header .logo img{
+    width: 140px
+}
+
+header ul{
+    float: right;
+    list-style: none;
+    padding-top: 5px;
+}
+
+header ul li{
+    float: left;
+}
+
+header ul li a{
+    display: block;
+    padding: 10px;
+    height: 100%;
+    color: black;
+    font-family: 'Padauk';
+    font-size: 1.1em;
+}
+
+header ul li ul{
+    background: rgb(250, 250, 250, 0.9);
+    float: none;
+    position: absolute;
+    top: 76px;
+    right: 0px;
+    z-index: 200;
+    font-size: .8em;
+    padding: 0px 10px;
+    transform: scale(1, 0);
+    transition: 200ms;
+    transform-origin: top;
+    min-width: max-content;
+    letter-spacing: 0.5px;
+    width: 100%;
+    padding: 5px;
+}
+
+header ul li ul .container{
+    width: max-content;
+    margin: auto;
+}
+
+header ul li ul li{
+    float: left;
+}
+
+header ul li:hover > ul {
+    transform: scale(1, 1);
+}
+
+
+@media only screen and (max-width: 870px){
+    
+    header{
+        padding: 5px 10px;
+        padding-bottom: 0px;
+    }
+    
+    header label{
+        position: absolute;
+        top: 20px;
+        right: 75px;
+        font-size: 1.1em;
+    }
+    
+    header .logo img{
+        width: 135px;
+    }
+    
+    .disappear{
+        display: none;
+    }
+    
+    header .menu_btn{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        cursor: pointer;
+        z-index: 400;
+    }
+    
+    header .menu_btn span{
+        display: block;
+        width: 29px;
+        background-color: rgb(0, 0, 0, 0.7);
+        height: 4px;
+        margin: 6px 0px;
+        border-radius: 5px;
+        transition:0.5s;
+    }
+    
+    header ul{
+        float: none;
+        padding: 10px;
+        position: absolute;
+        z-index: 300;
+        background-color: white;
+        width: calc(100% - 20px);
+        left: 0px;
+        top: 66px;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: 500ms;
+    }
+    
+    header ul li{
+        float: none;
+        list-style: none;
+    }
+    
+    header .blog{
+        width: max-content;
+        margin: auto;
+    }
+    
+    header ul li:last-child{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 17px 0px
+    }
+    
+    header ul li ul .container{
+        width: max-content;
+        margin: auto 10px;
+    }
+    
+    header ul li ul{
+        float: left;
+        position: relative;
+        top: -10px;
+        left: 0px;
+        z-index: 200;
+        background: transparent;
+        font-size: .9em;
+        padding: 0px 20px;
+        transform: scale(1, 0);
+        transition: 200ms;
+        border-top: 0px solid red;
+        display: none;
+    }
+    
+    header ul li ul li{
+        float: none
+    }
+    
+    header ul li ul li a{
+        padding: 5px;
+    }
+    
+    header ul li ul li:last-child{
+        border: 0px;
+        padding: 5px 0px;
+    }
+    
+    header ul li:hover > ul {
+        display: block;
+        transform: scale(1, 1);
+    }
+    
+    header ul.show{
+        transform: scale( 1, 1);
+    }
+    
+    header ul.show a{
+        opacity: 1;
+        transition: opacity 100ms ease-in-out 300ms;
+    }
+}

@@ -1,0 +1,137 @@
+.main_top{
+    display: none;
+}
+
+.shares .container{
+    display: flex;
+    line-height: 1.5;
+    color: black;
+}
+
+.shares .container span{
+    display: block;
+    margin-top: 10px;
+}
+
+.shares .container .left{
+    flex: 4;
+}
+
+.shares .container .right{
+    flex: 6;
+}
+
+.shares .container .left span{
+    color: #205aac;
+    font-weight: bold;
+}
+
+.shares .container .right span a{
+    display: inline-block;
+    background-color: green;
+    padding: 2px 30px;
+    border-radius: 3px;
+    color: white;
+}
+
+.shares .container .right span a:last-of-type{
+    background-color: #00539f;
+}
+
+
+
+.trans{
+    margin: 40px 0px;
+    color: black;
+}
+
+.trans h3{
+    text-align: center;
+}
+
+.trans .container{
+    padding: 10px;
+    max-width: 900px;
+}
+
+.trans .container .box{
+    display: flex;
+    border-top: 1px solid rgb(0, 0, 0, 0.4);
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+
+.trans .container span{
+    display: block;
+    line-height: 1.7;
+}
+
+.trans .container .left{
+    flex: 1;
+}
+
+.trans .container .right{
+    flex: 1;
+    text-align: right;
+}
+
+.trans .container span{
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.trans .container .left span:nth-child(1){
+    margin-bottom: 10px;
+    color: black;
+}
+
+.trans .container .left span:nth-child(2){
+    font-size: .9em;
+}
+
+.trans .container .left span:nth-child(3){
+    font-size: .9em;
+}
+
+.trans .container .right span:nth-child(1){
+    margin-bottom: 10px;
+    font-size: .9em;
+}
+
+.trans .container .right span:nth-child(2){
+    font-size: .8em;   
+}
+
+.trans .container .right span:nth-child(3){
+    color: black;
+    font-size: 1.1em;
+}
+
+.deposit .container{
+    color: black;
+}
+
+@media only screen and (max-width: 500px){
+    
+    .shares .container{
+        flex-direction: column;
+    }
+
+    .shares .container .right span{
+        margin-top: 15px;
+    }
+
+    .shares .container .left{
+        font-size: .9em;
+        color: rgb(0, 0, 0, 0.6);
+    }
+
+    .shares .container .left span{
+        font-size: 1.5em;
+        margin-top: 0px;
+    }
+
+    .shares .container .right span a{
+        width:45%;
+        text-align: center;
+    }
+}

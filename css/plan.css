@@ -1,0 +1,87 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.plan{
+    padding: 20px;
+    color: white;
+    /*background-image: url(../img/plan/plan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0 1000px rgb(0, 59, 101, 0.8) inset;*/
+}
+
+.plan .container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.plan .container .box{
+    background-image: url(../img/plan/planbg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 410px;
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1000ms;
+}
+
+.plan .container .box img{
+    float: left;
+}
+
+.plan .container .box .up_content{
+    float: right;
+    color: black;
+    transition: 1000ms;
+}
+
+.plan .container .box .up_content *{
+    margin: 10px;
+    transition: 1000ms;
+}
+
+.plan .container .box .down_content{
+    margin-top: 100px;
+    transition: 1000ms;
+}
+
+
+.plan .container .box:hover{
+    background-image: url(../img/plan/planbg2.png);
+    margin-top: 0px;
+    transition: 1000ms;
+}
+
+.plan .container .box:hover .up_content{
+    color: white;
+    transition: 1000ms;
+}
+
+.plan .container .box:hover .down_content{
+    color: black;
+    transition: 1000ms;
+}
+
+@media only screen and (max-width: 850px){
+    
+    .plan{
+        padding: 10px;
+    }
+    
+    .plan .container{
+        flex-direction: column;
+    }
+    
+    .plan .container .box{
+        margin: 10px auto;
+        max-width: 300px
+    }
+}
